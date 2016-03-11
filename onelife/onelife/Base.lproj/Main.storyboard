@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="onelife" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jib-Lj-zWA">
+                                <rect key="frame" x="262" y="112" width="77" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="buttonPlayerLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAS-ld-kFb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0,0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w10-Pu-30z">
+                                <rect key="frame" x="263" y="36" width="76" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Juc-tN-2zY">
+                                <rect key="frame" x="180" y="340" width="240" height="217"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Circle=0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYY-iv-o9j">
+                                <rect key="frame" x="347" y="36" width="82" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eag-zS-dfT">
+                                <rect key="frame" x="126" y="36" width="129" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-hd-rlJ">
+                                <rect key="frame" x="277" y="238" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Move"/>
+                                <connections>
+                                    <action selector="buttonMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWv-5L-EPk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Y Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJv-oP-4NG">
+                                <rect key="frame" x="304" y="177" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="X Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDR-nC-64M">
+                                <rect key="frame" x="199" y="177" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aDR-nC-64M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-52.5" id="385-5i-BZJ"/>
+                            <constraint firstItem="rJv-oP-4NG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="52.5" id="5Dj-o1-UGW"/>
+                            <constraint firstItem="lyv-hd-rlJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FhN-3W-P1V"/>
+                            <constraint firstItem="w10-Pu-30z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LHM-3i-RJ9"/>
+                            <constraint firstItem="Jib-Lj-zWA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SR6-gX-zDW"/>
+                            <constraint firstItem="w10-Pu-30z" firstAttribute="leading" secondItem="Eag-zS-dfT" secondAttribute="trailing" constant="8" id="dGH-cf-Qaf"/>
+                            <constraint firstItem="w10-Pu-30z" firstAttribute="leading" secondItem="Eag-zS-dfT" secondAttribute="trailing" constant="8" id="kG4-jb-hwG"/>
+                            <constraint firstItem="Juc-tN-2zY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgl-p4-cL8"/>
+                            <constraint firstItem="ZYY-iv-o9j" firstAttribute="leading" secondItem="w10-Pu-30z" secondAttribute="trailing" constant="8" id="rzR-Kl-C6i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelCircle" destination="ZYY-iv-o9j" id="nrX-AO-jUZ"/>
+                        <outlet property="labelLocation" destination="w10-Pu-30z" id="3dZ-WA-sYl"/>
+                        <outlet property="labelName" destination="Eag-zS-dfT" id="Gae-E4-U88"/>
+                        <outlet property="textXLocation" destination="aDR-nC-64M" id="fPa-qb-dzK"/>
+                        <outlet property="textYLocation" destination="rJv-oP-4NG" id="C9w-LP-lfl"/>
+                        <outlet property="viewMovement" destination="Juc-tN-2zY" id="PCF-vq-tv7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
 </document>

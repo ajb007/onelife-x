@@ -12,9 +12,15 @@
 		A174A5251C908AA200CC9290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A174A5231C908AA200CC9290 /* Main.storyboard */; };
 		A174A5271C908AA200CC9290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A174A5261C908AA200CC9290 /* Assets.xcassets */; };
 		A174A52A1C908AA200CC9290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A174A5281C908AA200CC9290 /* LaunchScreen.storyboard */; };
+		A174A5351C93095000CC9290 /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A5341C93095000CC9290 /* RestAPIManager.swift */; };
+		A174A5371C930ACC00CC9290 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A5361C930ACC00CC9290 /* Player.swift */; };
+		A174A5391C93190800CC9290 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A5381C93190800CC9290 /* Constants.swift */; };
+		A174A53B1C93243800CC9290 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A53A1C93243800CC9290 /* Functions.swift */; };
+		CB843D04B43DAB651CC0CD2D /* Pods_onelife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE058B386892023219349EFC /* Pods_onelife.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380B767EDA098ABDC274F188 /* Pods-onelife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onelife.release.xcconfig"; path = "Pods/Target Support Files/Pods-onelife/Pods-onelife.release.xcconfig"; sourceTree = "<group>"; };
 		A174A51C1C908AA200CC9290 /* onelife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onelife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A174A51F1C908AA200CC9290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A174A5211C908AA200CC9290 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		A174A5261C908AA200CC9290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A174A5291C908AA200CC9290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A174A52B1C908AA200CC9290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A174A5341C93095000CC9290 /* RestAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
+		A174A5361C930ACC00CC9290 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A174A5381C93190800CC9290 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A174A53A1C93243800CC9290 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		BE058B386892023219349EFC /* Pods_onelife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onelife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54FA860E1D8AD34B69B8B85 /* Pods-onelife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onelife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-onelife/Pods-onelife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB843D04B43DAB651CC0CD2D /* Pods_onelife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57D21A13CF606F9271516DA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E54FA860E1D8AD34B69B8B85 /* Pods-onelife.debug.xcconfig */,
+				380B767EDA098ABDC274F188 /* Pods-onelife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89274832EB94C60BCD7A88F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE058B386892023219349EFC /* Pods_onelife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A174A5131C908AA200CC9290 = {
 			isa = PBXGroup;
 			children = (
 				A174A51E1C908AA200CC9290 /* onelife */,
 				A174A51D1C908AA200CC9290 /* Products */,
+				57D21A13CF606F9271516DA6 /* Pods */,
+				89274832EB94C60BCD7A88F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +88,14 @@
 			children = (
 				A174A51F1C908AA200CC9290 /* AppDelegate.swift */,
 				A174A5211C908AA200CC9290 /* ViewController.swift */,
+				A174A5381C93190800CC9290 /* Constants.swift */,
 				A174A5231C908AA200CC9290 /* Main.storyboard */,
+				A174A53A1C93243800CC9290 /* Functions.swift */,
 				A174A5261C908AA200CC9290 /* Assets.xcassets */,
 				A174A5281C908AA200CC9290 /* LaunchScreen.storyboard */,
 				A174A52B1C908AA200CC9290 /* Info.plist */,
+				A174A5341C93095000CC9290 /* RestAPIManager.swift */,
+				A174A5361C930ACC00CC9290 /* Player.swift */,
 			);
 			path = onelife;
 			sourceTree = "<group>";
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A174A52E1C908AA200CC9290 /* Build configuration list for PBXNativeTarget "onelife" */;
 			buildPhases = (
+				119F7F11D23D3D5FF72BE2ED /* Check Pods Manifest.lock */,
 				A174A5181C908AA200CC9290 /* Sources */,
 				A174A5191C908AA200CC9290 /* Frameworks */,
 				A174A51A1C908AA200CC9290 /* Resources */,
+				063FF2A318342BABF5C0136B /* Embed Pods Frameworks */,
+				24B18E5656073EBA74533536 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +170,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		063FF2A318342BABF5C0136B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-onelife/Pods-onelife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		119F7F11D23D3D5FF72BE2ED /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		24B18E5656073EBA74533536 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-onelife/Pods-onelife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A174A5181C908AA200CC9290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A174A5391C93190800CC9290 /* Constants.swift in Sources */,
+				A174A5371C930ACC00CC9290 /* Player.swift in Sources */,
 				A174A5221C908AA200CC9290 /* ViewController.swift in Sources */,
+				A174A5351C93095000CC9290 /* RestAPIManager.swift in Sources */,
 				A174A5201C908AA200CC9290 /* AppDelegate.swift in Sources */,
+				A174A53B1C93243800CC9290 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +337,7 @@
 		};
 		A174A52F1C908AA200CC9290 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E54FA860E1D8AD34B69B8B85 /* Pods-onelife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = onelife/Info.plist;
@@ -257,6 +349,7 @@
 		};
 		A174A5301C908AA200CC9290 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380B767EDA098ABDC274F188 /* Pods-onelife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = onelife/Info.plist;
@@ -285,6 +378,7 @@
 				A174A5301C908AA200CC9290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
