@@ -85,11 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-onelife/Alamofire.framework"
-  install_framework "Pods-onelife/Gloss.framework"
   install_framework "Pods-onelife/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-onelife/Alamofire.framework"
-  install_framework "Pods-onelife/Gloss.framework"
   install_framework "Pods-onelife/SwiftyJSON.framework"
 fi

@@ -22,4 +22,7 @@ class Player {
     var loaded : Bool = false
     var inRealm : Bool = false
     var specialLocation: Int = 0
+    var onPost : Bool = false
+    var cloaked : Bool = false
+    var event: Int = 0
 }

@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12674461CA74D1000047ECC /* TableViewCellPlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12674451CA74D1000047ECC /* TableViewCellPlayerList.swift */; };
+		A12674481CA74D4B00047ECC /* ViewControllerPlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12674471CA74D4B00047ECC /* ViewControllerPlayerList.swift */; };
+		A126744A1CA74ED200047ECC /* ViewControllerPlayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12674491CA74ED200047ECC /* ViewControllerPlayerDetail.swift */; };
+		A126744C1CA7CCCA00047ECC /* TableViewCellPlayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A126744B1CA7CCCA00047ECC /* TableViewCellPlayerDetail.swift */; };
+		A13093F41CA15CF10015C1B7 /* ViewControllerCreatePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13093F31CA15CF10015C1B7 /* ViewControllerCreatePlayer.swift */; };
+		A13093F61CA2FB2A0015C1B7 /* OLPlayerTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13093F51CA2FB2A0015C1B7 /* OLPlayerTypes.swift */; };
+		A13D44451C958DDC00E5411B /* OLMonsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D44441C958DDC00E5411B /* OLMonsters.swift */; };
+		A13D44471C97348C00E5411B /* TextStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D44461C97348C00E5411B /* TextStrings.swift */; };
+		A13D44711C9D5E0A00E5411B /* ViewControllerLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D44701C9D5E0A00E5411B /* ViewControllerLaunchScreen.swift */; };
+		A13D44731C9D5F4700E5411B /* ViewControllerCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D44721C9D5F4700E5411B /* ViewControllerCreateAccount.swift */; };
+		A13D44751C9D60A100E5411B /* OLSocketServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D44741C9D60A100E5411B /* OLSocketServerConnection.swift */; };
+		A13D44771C9D893800E5411B /* OLAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D44761C9D893800E5411B /* OLAccount.swift */; };
+		A13D44791C9DC6DE00E5411B /* OLRestServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D44781C9DC6DE00E5411B /* OLRestServerConnection.swift */; };
 		A174A5201C908AA200CC9290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A51F1C908AA200CC9290 /* AppDelegate.swift */; };
-		A174A5221C908AA200CC9290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A5211C908AA200CC9290 /* ViewController.swift */; };
+		A174A5221C908AA200CC9290 /* ViewControllerRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A5211C908AA200CC9290 /* ViewControllerRealm.swift */; };
 		A174A5251C908AA200CC9290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A174A5231C908AA200CC9290 /* Main.storyboard */; };
 		A174A5271C908AA200CC9290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A174A5261C908AA200CC9290 /* Assets.xcassets */; };
-		A174A52A1C908AA200CC9290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A174A5281C908AA200CC9290 /* LaunchScreen.storyboard */; };
 		A174A5351C93095000CC9290 /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A5341C93095000CC9290 /* RestAPIManager.swift */; };
 		A174A5371C930ACC00CC9290 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A5361C930ACC00CC9290 /* Player.swift */; };
 		A174A5391C93190800CC9290 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174A5381C93190800CC9290 /* Constants.swift */; };
@@ -21,12 +33,24 @@
 
 /* Begin PBXFileReference section */
 		380B767EDA098ABDC274F188 /* Pods-onelife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onelife.release.xcconfig"; path = "Pods/Target Support Files/Pods-onelife/Pods-onelife.release.xcconfig"; sourceTree = "<group>"; };
+		A12674451CA74D1000047ECC /* TableViewCellPlayerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellPlayerList.swift; sourceTree = "<group>"; };
+		A12674471CA74D4B00047ECC /* ViewControllerPlayerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPlayerList.swift; sourceTree = "<group>"; };
+		A12674491CA74ED200047ECC /* ViewControllerPlayerDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPlayerDetail.swift; sourceTree = "<group>"; };
+		A126744B1CA7CCCA00047ECC /* TableViewCellPlayerDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellPlayerDetail.swift; sourceTree = "<group>"; };
+		A13093F31CA15CF10015C1B7 /* ViewControllerCreatePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCreatePlayer.swift; sourceTree = "<group>"; };
+		A13093F51CA2FB2A0015C1B7 /* OLPlayerTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLPlayerTypes.swift; sourceTree = "<group>"; };
+		A13D44441C958DDC00E5411B /* OLMonsters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLMonsters.swift; sourceTree = "<group>"; };
+		A13D44461C97348C00E5411B /* TextStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStrings.swift; sourceTree = "<group>"; };
+		A13D44701C9D5E0A00E5411B /* ViewControllerLaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLaunchScreen.swift; sourceTree = "<group>"; };
+		A13D44721C9D5F4700E5411B /* ViewControllerCreateAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCreateAccount.swift; sourceTree = "<group>"; };
+		A13D44741C9D60A100E5411B /* OLSocketServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLSocketServerConnection.swift; sourceTree = "<group>"; };
+		A13D44761C9D893800E5411B /* OLAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLAccount.swift; sourceTree = "<group>"; };
+		A13D44781C9DC6DE00E5411B /* OLRestServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLRestServerConnection.swift; sourceTree = "<group>"; };
 		A174A51C1C908AA200CC9290 /* onelife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onelife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A174A51F1C908AA200CC9290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A174A5211C908AA200CC9290 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A174A5211C908AA200CC9290 /* ViewControllerRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRealm.swift; sourceTree = "<group>"; };
 		A174A5241C908AA200CC9290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A174A5261C908AA200CC9290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A174A5291C908AA200CC9290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A174A52B1C908AA200CC9290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A174A5341C93095000CC9290 /* RestAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
 		A174A5361C930ACC00CC9290 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -86,13 +110,25 @@
 		A174A51E1C908AA200CC9290 /* onelife */ = {
 			isa = PBXGroup;
 			children = (
-				A174A51F1C908AA200CC9290 /* AppDelegate.swift */,
-				A174A5211C908AA200CC9290 /* ViewController.swift */,
-				A174A5381C93190800CC9290 /* Constants.swift */,
 				A174A5231C908AA200CC9290 /* Main.storyboard */,
+				A126744B1CA7CCCA00047ECC /* TableViewCellPlayerDetail.swift */,
+				A12674451CA74D1000047ECC /* TableViewCellPlayerList.swift */,
+				A12674491CA74ED200047ECC /* ViewControllerPlayerDetail.swift */,
+				A12674471CA74D4B00047ECC /* ViewControllerPlayerList.swift */,
+				A13093F31CA15CF10015C1B7 /* ViewControllerCreatePlayer.swift */,
+				A13D44721C9D5F4700E5411B /* ViewControllerCreateAccount.swift */,
+				A13D44701C9D5E0A00E5411B /* ViewControllerLaunchScreen.swift */,
+				A174A5211C908AA200CC9290 /* ViewControllerRealm.swift */,
+				A13D44781C9DC6DE00E5411B /* OLRestServerConnection.swift */,
+				A13D44741C9D60A100E5411B /* OLSocketServerConnection.swift */,
+				A174A51F1C908AA200CC9290 /* AppDelegate.swift */,
+				A13D44761C9D893800E5411B /* OLAccount.swift */,
+				A13093F51CA2FB2A0015C1B7 /* OLPlayerTypes.swift */,
+				A13D44441C958DDC00E5411B /* OLMonsters.swift */,
+				A174A5381C93190800CC9290 /* Constants.swift */,
+				A13D44461C97348C00E5411B /* TextStrings.swift */,
 				A174A53A1C93243800CC9290 /* Functions.swift */,
 				A174A5261C908AA200CC9290 /* Assets.xcassets */,
-				A174A5281C908AA200CC9290 /* LaunchScreen.storyboard */,
 				A174A52B1C908AA200CC9290 /* Info.plist */,
 				A174A5341C93095000CC9290 /* RestAPIManager.swift */,
 				A174A5361C930ACC00CC9290 /* Player.swift */,
@@ -162,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A174A52A1C908AA200CC9290 /* LaunchScreen.storyboard in Resources */,
 				A174A5271C908AA200CC9290 /* Assets.xcassets in Resources */,
 				A174A5251C908AA200CC9290 /* Main.storyboard in Resources */,
 			);
@@ -223,11 +258,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A126744A1CA74ED200047ECC /* ViewControllerPlayerDetail.swift in Sources */,
+				A12674481CA74D4B00047ECC /* ViewControllerPlayerList.swift in Sources */,
 				A174A5391C93190800CC9290 /* Constants.swift in Sources */,
+				A13093F61CA2FB2A0015C1B7 /* OLPlayerTypes.swift in Sources */,
+				A13D44451C958DDC00E5411B /* OLMonsters.swift in Sources */,
 				A174A5371C930ACC00CC9290 /* Player.swift in Sources */,
-				A174A5221C908AA200CC9290 /* ViewController.swift in Sources */,
+				A12674461CA74D1000047ECC /* TableViewCellPlayerList.swift in Sources */,
+				A13D44471C97348C00E5411B /* TextStrings.swift in Sources */,
+				A174A5221C908AA200CC9290 /* ViewControllerRealm.swift in Sources */,
+				A13D44731C9D5F4700E5411B /* ViewControllerCreateAccount.swift in Sources */,
+				A13093F41CA15CF10015C1B7 /* ViewControllerCreatePlayer.swift in Sources */,
 				A174A5351C93095000CC9290 /* RestAPIManager.swift in Sources */,
 				A174A5201C908AA200CC9290 /* AppDelegate.swift in Sources */,
+				A13D44711C9D5E0A00E5411B /* ViewControllerLaunchScreen.swift in Sources */,
+				A13D44791C9DC6DE00E5411B /* OLRestServerConnection.swift in Sources */,
+				A13D44751C9D60A100E5411B /* OLSocketServerConnection.swift in Sources */,
+				A126744C1CA7CCCA00047ECC /* TableViewCellPlayerDetail.swift in Sources */,
+				A13D44771C9D893800E5411B /* OLAccount.swift in Sources */,
 				A174A53B1C93243800CC9290 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,14 +289,6 @@
 				A174A5241C908AA200CC9290 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A174A5281C908AA200CC9290 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A174A5291C908AA200CC9290 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,6 +384,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barcode.onelife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barcode.onelife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

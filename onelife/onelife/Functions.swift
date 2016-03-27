@@ -8,6 +8,16 @@
 
 import Foundation
 
+func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+    if let data = text.dataUsingEncoding(NSUTF8StringEncoding) {
+        do {
+            return try NSJSONSerialization.JSONObjectWithData(data, options: []) as? [String:AnyObject]
+        } catch let error as NSError {
+            print(error)
+        }
+    }
+    return nil
+}
 
 func setCircle(player: Player) {
     
@@ -41,6 +51,13 @@ func setLocation(player: Player) {
             "Far Harad",    "Near Harad",   "The Northern Waste", "Rhun"
         ]
     ]
+    
+    player.inRealm = true
+    player.specialLocation = PL_REALM
+    if player.location.x == 0 && player.location.y == 0 {
+        player.inRealm = false
+        player.specialLocation = PL_THRONE
+    }
     
     if player.inRealm {
         
@@ -97,4 +114,22 @@ func setLocation(player: Player) {
     //sprintf(error_msg,
     //    "[%s] Bad c->player.area of %hd in Do_name_location.\n",
     //    c->connection_id, c->player.area);
+    
+    // Is the player also on a trading post?
+    player.onPost = false
+    if fabs(Double(player.location.x)) == fabs(Double(player.location.y)) && player.specialLocation != PL_THRONE && !player.cloaked {
+        
+        let dtemp = sqrt(Double(fabs(Double(player.location.x)))/100)
+        
+        //if String(format: "%.3f", floor(dtemp)) == String(format: "%.3f", dtemp) {
+        //    player.onPost = true
+        // }
+        
+        if floor(dtemp) == dtemp {
+            player.onPost = true
+        }
+    }
+    
+    
+    
 }

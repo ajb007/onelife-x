@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Gloss.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-onelife.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E12FAEE04F2522790AA9739434C3CB5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B07B012AE17952EE777271E277F90284</key>
+		<key>9F0C900F5D6A07DA3CB5585837A6B78B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E00C6D23F346DCFCD347CF290173FADD</key>
+		<key>F51FCB4DC63371E04C239C2871091D8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
